@@ -1,7 +1,11 @@
 # 📄 Documentacion
 
+L es un lenguaje de programación "mini" inspirado en la sintaxis de Rust, pero enfocado únicamente en cálculos matemáticos.
+Identificadores: Solo reconoce números enteros de 32 bits (i32).
+Palabras clave: Utiliza let para indicar el inicio de una expresión (siguiendo el estilo de Rust).
+Símbolos: Reconoce los operadores básicos (+, -, *, /) y paréntesis () para dar prioridad a ciertas operaciones.
 
-# Estrcutura del repositorio
+# 📁 Estrcutura del repositorio
 ```text
 proyecto_L/
 ├── Cargo.toml  # Dependencias (lalrpop, lalrpop-util)
@@ -11,7 +15,7 @@ proyecto_L/
 │ └── gramatica.lalrpop # Definición de nuestro Lexer/Parser L
 └── README.md  # Documentación
 ```
-## Instalacion
+## 💾 Instalacion
 
 La instalacion y la compilacion esta basada en Windows, por lo tanto, en Linux no funciona. <br></br>
 Asegúrate de tener Rust instalado ejecutando `rustc --version` en tu terminal
