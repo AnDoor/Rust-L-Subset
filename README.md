@@ -2,6 +2,7 @@
 
 
 # Estrcutura del repositorio
+```http
 proyecto_L/
 ├── Cargo.toml  # Dependencias (lalrpop, lalrpop-util)
 ├── build.rs  # Configuración para compilar la gramática
@@ -9,7 +10,7 @@ proyecto_L/
 │ ├── main.rs  # Punto de entrada
 │  └── gramatica.lalrpop # Definición de nuestro Lexer/Parser L
 └── README.md  # Documentación
-
+```
 ## Instalacion
 
 La instalacion y la compilacion esta basada en Windows, por lo tanto, en Linux no funciona. <br></br>
