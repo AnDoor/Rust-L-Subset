@@ -2,13 +2,13 @@
 
 
 # Estrcutura del repositorio
-```http
+```text
 proyecto_L/
 ├── Cargo.toml  # Dependencias (lalrpop, lalrpop-util)
 ├── build.rs  # Configuración para compilar la gramática
 ├── src/
 │ ├── main.rs  # Punto de entrada
-│  └── gramatica.lalrpop # Definición de nuestro Lexer/Parser L
+│ └── gramatica.lalrpop # Definición de nuestro Lexer/Parser L
 └── README.md  # Documentación
 ```
 ## Instalacion
