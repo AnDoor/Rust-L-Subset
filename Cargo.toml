@@ -1,0 +1,12 @@
+[package]
+name = "proyecto_l"
+version = "0.1.0"
+edition = "2021"
+
+# Aquí definimos las dependencias que usará tu programa al ejecutarse
+[dependencies]
+lalrpop-util = { version = "0.20.0", features = ["lexer"] }
+
+# Aquí le decimos a Rust que use LALRPOP para construir el lexer antes de compilar
+[build-dependencies]
+lalrpop = "0.20.0"

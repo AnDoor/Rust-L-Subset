@@ -1,0 +1,24 @@
+use std::str::FromStr;
+
+grammar;
+
+// ======================================
+// SECCIÓN DE TOKENS 
+// ======================================
+
+pub Plus: () = r#"\+"#;
+pub Minus: () = r#"-"#;
+pub LParen: () = r#"\("#;
+pub RParen: () = r#"\)"#;
+pub Number: String = <s:r#"[0-9]+"#> => s.to_string();
+
+pub Term: i32 = {
+    <n:Number> => i32::from_str(&n).unwrap(),
+    LParen <t:Term> RParen => t,
+};
+
+pub Expr: i32 = {
+   <l:Expr> Plus <r:Term> => l + r,
+    <l:Expr> Minus <r:Term> => l - r,
+    <Term>,
+};
