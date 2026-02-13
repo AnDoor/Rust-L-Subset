@@ -15,7 +15,7 @@ proyecto_L/
 La instalacion y la compilacion esta basada en Windows, por lo tanto, en Linux no funciona.
 Asegúrate de tener Rust instalado ejecutando `rustc --version` en tu terminal
 
-1. Clona el repositorio en una carpeta.
+1. Clona el repositorio en una carpeta. <br></br>
    `https://github.com/AnDoor/Rust-L-Subset.git`
    `cd Rust-L-Subset`
    
